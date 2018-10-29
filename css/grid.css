@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body#home section#work .section {
+  display: grid;
+  /* Code for center-alignment */
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.blog-links-hidden{
+  display:none !important;
+}
+.btn-container{
+  margin: auto;
+  height:44px;
+  width:166.23px;
+  
+}
+
+button{
+  cursor:pointer;
+  line-height: 20px;
+  font-size:20px;
+  border: 1px solid #ddd;
+}
+
+.col1 {
+  -ms-grid-column: 1;
+}
+
+.col2 {
+  -ms-grid-column: 3;
+}
+
+.col3 {
+  -ms-grid-column: 5;
+}
+
+.row1 {
+  -ms-grid-row: 1;
+}
+
+.row2 {
+  -ms-grid-row: 5;
+}
+
+.row3 {
+  -ms-grid-row: 9;
+}
+
+.row3_5 {
+  -ms-grid-row: 11;
+}
+
+#blog-links {
+  /* Grid template */
+  -ms-grid-columns: 1fr 24px 1fr 24px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-gap: 8rem 15rem;
+  padding: 5rem;
+}
+
+#blog-links .blog-link {
+  background-color: #fff;
+  color: #212121;
+  display: block;
+  text-decoration: none;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+#blog-links a span {
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 2px;
+  font-size: 85%;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+#blog-links .blog-link:hover {
+  box-shadow: 0 40px 40px rgba(0, 0, 0, 0.16);
+  transform: translate(0, -20px);
+}
+
+#blog-links a div.aquarelle {
+  background: no-repeat url(../img/aqua.png) 80% / 80%;
+  background-color: #e8e8e8; 
+}
+
+#blog-links a div.solar {
+  background: no-repeat url(../img/solar.png) 100% / 100%;
+  background-color: #bcbcbc; 
+}
+
+#blog-links a div.shutai {
+  background: no-repeat url(../img/yayy.png) 75% / 75%;
+  background-color: #eee; 
+}
+
+#blog-links a div.safai {
+  background: no-repeat url(../img/YES.png) 50% / 50%;
+  background-color: #eee; 
+}
+
+#blog-links a div.a-therm {
+  background: no-repeat url(../img/atherm.png) 50% / 100%;
+  background-color: black; 
+}
+
+#blog-links a div.tgc {
+  background: no-repeat url(../img/tgc.png) 90% / 90%,  #f78295 50% / 100%;
+}
+
+#blog-links a div.minet {
+  background: no-repeat url(../img/minet.png) 90% / 90%,  #77a0e6 50% / 100%;
+}
+
+#blog-links a div.ldc {
+  background: no-repeat url(../img/ldc.png) 80% / 80%,  #bbb 50% / 100%;
+  ;
+}
+
+
+#blog-links .blog-link .article-image {
+  height: 250px;
+  margin-bottom: 32px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
+}
+
+#blog-links .blog-link h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.24;
+  margin: 0 0 1px 5%;
+  text-align: left;
+  max-width: 100%; /* for IE10 */
+}
+
+#blog-links .blog-link p {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.24;
+  margin: 2% 0 -10px 5%;
+  text-align: left;
+  max-width: 90%; /* for IE10 */
+}
+
+.portfolio-tags {
+  padding: 1% 0 1% 0;
+  margin-top: 5%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #aaa;
+  border-top: 1px solid #e9ebee;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.5px;
+}
+
+#blog-links .type-image-2-1 {
+  -ms-grid-row-span: 3;
+  -ms-grid-column-span: 1;
+  grid-row: span 2;
+}
+
+#blog-links .type-paragraph-2-1 {
+  -ms-grid-row-span: 3;
+  -ms-grid-column-span: 1;
+  grid-row: span 2;
+  text-align: left;
+}
+
+#blog-links .type-paragraph-2-1 .article-image {
+  display: inline-block;
+  margin: 0;
+  height: 102px;
+  width: 112px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+}
+
+#blog-links .type-paragraph-2-1 h3 {
+  max-width: calc(100% - 142px);
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.21;
+  color: #212121;
+  text-align: left;
+  margin: 0;
+  margin-left: 24px;
+  vertical-align: middle;
+}
+
+#blog-links .type-paragraph-2-1 p {
+  font-size: 16px;
+  line-height: 1.62;
+  color: #757575;
+  margin: 24px 0;
+}
+
+#blog-links .type-paragraph-2-1 .continue {
+  color: #1537f4;
+  margin-bottom: 0;
+}
+
+#blog-links .type-color-2-1 {
+  -ms-grid-row-span: 3;
+  -ms-grid-column-span: 1;
+  grid-row: span 2;
+  background-color: #212121;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+#blog-links .type-image-2-2 {
+  -ms-grid-row-span: 3;
+  -ms-grid-column-span: 3;
+  grid-column: span 2;
+  grid-row: span 2;
+  text-align: left;
+}
+
+#blog-links .type-heading-1-1 {
+  -ms-grid-row-span: 1;
+  -ms-grid-column-span: 1;
+  display: flex;
+  align-items: center;
+}
+
+#blog-links .type-image-2-2 span {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background-color: #212121;
+  color: #ffffff;
+  padding: 4px 24px;
+  display: inline-block;
+  margin: 0 0 24px;
+  text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1024px) {
+  #blog-links {
+    /* Grid template */
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    margin: 24px;
+  }
+
+  #blog-links .blog-link {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+
+  #blog-links .blog-link:last-of-type {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #hero .content h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  #hero .content p {
+    font-size: 14px;
+    line-height: 1.57;
+    letter-spacing: 5px;
+  }
+
+  #blog-links {
+    /* Grid template */
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    grid-gap: 50px;
+    padding: 5rem 0 0 0;
+  }
+
+  #blog-links .blog-link {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+
+  #blog-links .type-paragraph-2-1 .article-image {
+    display: block;
+    height: 102px;
+    width: 100%;
+  }
+
+  #blog-links .type-paragraph-2-1 h3 {
+    max-width: unset;
+    display: block;
+    margin: 24px 0;
+  }
+
+  #blog-links .blog-link:last-of-type {
+    grid-column: span 1;
+  }
+
+  #blog-links .blog-link .article-image {
+    height: 150px;
+  }
+
+  #blog-links .blog-link h3 {
+    font-size: 20px;
+  }
+
+  #blog-links .blog-link p {
+    font-size: 15px;
+  }

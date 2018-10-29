@@ -1,0 +1,212 @@
+.SkillBar {
+  width: 90%;
+  height: 35px;
+  position: relative;
+  background: rgba(17, 17, 17, 0.3);
+  margin: 20px auto;
+  border-radius: 25px; }
+
+#Skill-HTML {
+  width: 100%;
+  animation: Animate-HTML 4s;
+  -webkit-animation: Animate-HTML 4s;
+  -moz-animation: Animate-HTML 4s;
+  -o-animation: Animate-HTML 4s;
+  height: 35px;
+  position: absolute;
+  border-radius: 25px;
+  background-color: #ea8564; }
+
+@keyframes Animate-HTML {
+  from {
+    width: 10px; }
+  to {
+    width: 100%; } }
+@-webkit-keyframes Animate-HTML {
+  from {
+    width: 10px; }
+  to {
+    width: 100%; } }
+@-moz-keyframes Animate-HTML {
+  from {
+    width: 10px; }
+  to {
+    width: 100%; } }
+@-o-keyframes Animate-HTML {
+  from {
+    width: 10px; }
+  to {
+    width: 100%; } }
+#Skill-Py {
+  animation: Animate-Py 4s;
+  -webkit-animation: Animate-Py 4s;
+  -moz-animation: Animate-Py 4s;
+  -o-animation: Animate-Py 4s;
+  width: 85%;
+  height: 35px;
+  border-radius: 25px;
+  position: absolute;
+  background-color: #ab1552; }
+
+@keyframes Animate-Py {
+  from {
+    width: 10px; }
+  to {
+    width: 85%; } }
+@-webkit-keyframes Animate-Py {
+  from {
+    width: 10px; }
+  to {
+    width: 85%; } }
+@-moz-keyframes Animate-Py {
+  from {
+    width: 10px; }
+  to {
+    width: 85%; } }
+@-o-keyframes Animate-Py {
+  from {
+    width: 10px; }
+  to {
+    width: 85%; } }
+#Skill-CSS {
+  animation: Animate-CSS 5s;
+  -webkit-animation: Animate-CSS 5s;
+  -moz-animation: Animate-CSS 5s;
+  -o-animation: Animate-CSS 5s;
+  width: 85%;
+  height: 35px;
+  border-radius: 25px;
+  position: absolute;
+  background-color: #55a69f; }
+
+@keyframes Animate-CSS {
+  from {
+    width: 10px; }
+  to {
+    width: 85%; } }
+@-webkit-keyframes Animate-CSS {
+  from {
+    width: 10px; }
+  to {
+    width: 85%; } }
+@-moz-keyframes Animate-CSS {
+  from {
+    width: 10px; }
+  to {
+    width: 85%; } }
+@-o-keyframes Animate-CSS {
+  from {
+    width: 10px; }
+  to {
+    width: 85%; } }
+#Skill-JS {
+  animation: Animate-JS 4s;
+  -webkit-animation: Animate-JS 4s;
+  -moz-animation: Animate-JS 4s;
+  -o-animation: Animate-JS 4s;
+  width: 65%;
+  height: 35px;
+  border-radius: 25px;
+  position: absolute;
+  background-color: #da3636; }
+
+@keyframes Animate-JS {
+  from {
+    width: 10px; }
+  to {
+    width: 65%; } }
+@-webkit-keyframes Animate-JS {
+  from {
+    width: 10px; }
+  to {
+    width: 65%; } }
+@-moz-keyframes Animate-JS {
+  from {
+    width: 10px; }
+  to {
+    width: 65%; } }
+@-o-keyframes Animate-JS {
+  from {
+    width: 10px; }
+  to {
+    width: 65%; } }
+#Skill-C {
+  animation: Animate-C 4s;
+  -webkit-animation: Animate-C 4s;
+  -moz-animation: Animate-C 4s;
+  -o-animation: Animate-C 4s;
+  width: 90%;
+  height: 35px;
+  position: absolute;
+  border-radius: 25px;
+  background-color: #6699ee; }
+
+@keyframes Animate-C {
+  from {
+    width: 10px; }
+  to {
+    width: 90%; } }
+@-webkit-keyframes Animate-C {
+  from {
+    width: 10px; }
+  to {
+    width: 90%; } }
+@-moz-keyframes Animate-C {
+  from {
+    width: 10px; }
+  to {
+    width: 90%; } }
+@-o-keyframes Animate-C {
+  from {
+    width: 10px; }
+  to {
+    width: 90%; } }
+#Skill-Csharp {
+  animation: Animate-C 4s;
+  -webkit-animation: Animate-Csharp 4s;
+  -moz-animation: Animate-Csharp 4s;
+  -o-animation: Animate-Csharp 4s;
+  width: 60%;
+  height: 35px;
+  position: absolute;
+  border-radius: 25px;
+  background-color: #00c5ad; }
+
+@keyframes Animate-Csharp {
+  from {
+    width: 10px; }
+  to {
+    width: 60%; } }
+@-webkit-keyframes Animate-Csharp {
+  from {
+    width: 10px; }
+  to {
+    width: 60%; } }
+@-moz-keyframes Animate-Csharp {
+  from {
+    width: 10px; }
+  to {
+    width: 60%; } }
+@-o-keyframes Animate-Csharp {
+  from {
+    width: 10px; }
+  to {
+    width: 60%; } }
+.Skill-Area {
+  z-index: 1;
+  float: left;
+  margin-left: 15px;
+  text-shadow: none;
+  color: #fff;
+  font-size: 18px; }
+
+.PercentText {
+  z-index: 3;
+  position: relative;
+  padding-right: 15px;
+  float: right;
+  text-shadow: none;
+  color: #fff;
+  font-size: 18px; }
+
+/*# sourceMappingURL=skills.css.map */

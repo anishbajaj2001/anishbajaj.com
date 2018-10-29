@@ -1,0 +1,539 @@
+$items: 4;
+$transition-duration: 0.5s;
+$transition-delay: 0.05s;
+
+
+html {
+	font-family: Europa;
+	font-weight: 800;
+}
+
+body {
+	color: #fff;
+	margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Toggle functionality */
+
+// To hide the checkbox
+#toggle {
+  position: absolute;
+  left: -100%;
+  top: -100%;
+}
+
+#toggle:focus {
+
+  & ~ .toggle-container .button-toggle {
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Styles for the 'open' state, if the checkbox is checked
+#toggle:checked {
+  // Any element you need to change the style if menu is open goes here, using the sibling selector (~) as follows
+
+  // Making the "X" icon using `:before` and `:after` pseudo-elements
+  & ~ .toggle-container .button-toggle {
+    box-shadow: 0 0 0 250px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      box-shadow: 0 0 0 250px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    &:before {
+      transform: translateY(-50%) rotate(45deg) scale(1);
+    }
+
+    &:after {
+      transform: translateY(-50%) rotate(-45deg) scale(1);
+    }
+  }
+
+  &:focus ~ .toggle-container .button-toggle {
+    box-shadow: 0 0 0 250px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  // Open nav
+  & ~ .nav {
+    pointer-events: auto;
+    transform: translate(50px, 50px);
+
+    // Restoring nav items from "lines" in the menu icon
+    .nav-item {
+      color: #477cd4;
+      letter-spacing: 0;
+      height: 40px;
+      line-height: 40px;
+      margin-top: 0;
+      opacity: 1;
+      transform: scaleY(1);
+      transition: $transition-duration, opacity 0.1s;
+
+      // Setting delays for the nav items in open transition
+      @for $i from 1 through $items {
+        &:nth-child(#{$i}) {
+          $delay: ($items - $i) * $transition-delay;
+          transition-delay: $delay;
+          &:before {
+            transition-delay: $delay;
+          }
+        }
+      }
+
+      // Hiding the lines
+      &:before {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+
+/* Toggle button */
+
+.button-toggle {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: $transition-duration + 0.1;
+
+  // Shadow on hover
+  &:hover {
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  // Making the "X" icon using `:before` and `:after` pseudo-elements
+  // Initially hidden because `scale(0)` transformation
+
+  &:before, &:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #477cd4;
+    border-radius: 5px;
+    transition: $transition-duration;
+  }
+
+  &:before {
+    transform: translateY(-50%) rotate(45deg) scale(0);
+  }
+
+  &:after {
+    transform: translateY(-50%) rotate(-45deg) scale(0);
+  }
+}
+
+
+/* Menu */
+
+.nav {
+  display: inline-block;
+  margin: 25px 25px 20px;
+  // Don't want pointer-events as menu is closed
+  pointer-events: none;
+  transition: $transition-duration;
+}
+
+// Showing nav items as lines, making up the hamburger menu icon
+.nav-item {
+  position: relative;
+  display: inline-block;
+  float: left;
+  clear: both;
+  color: transparent;
+  font-size: 14px;
+  letter-spacing: -6.2px;
+  height: 7px;
+  line-height: 7px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: scaleY(0.2);
+  transition: $transition-duration, opacity 1s;
+
+  // Setting delays for the nav items in close transition
+  @for $i from 1 through $items {
+    &:nth-child(#{$i}) {
+      $delay: ($i - 1) * $transition-delay;
+      transition-delay: $delay;
+      &:before {
+        transition-delay: $delay;
+      }
+    }
+  }
+
+  // Adjusting width for the second line
+  &:nth-child(2) {
+    letter-spacing: -5.5px;
+  }
+
+  // Adjusting from the fourth element onwards
+  &:nth-child(n + 4) {
+    letter-spacing: -8px;
+    margin-top: -7px;
+    opacity: 0;
+  }
+
+  // Getting the lines for the hamburger menu icon
+  &:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #477cd4;
+    transform: translateY(-50%) scaleY(5);
+    transition: $transition-duration;
+  }
+}
+
+
+
+section {
+
+	width: 100%;
+
+	&#landing {
+
+		height: 80vh;
+		margin: 0;
+		position: relative;
+
+		div.container {
+
+			div.row {
+
+				div.columns {
+					
+					padding-top: 1%;
+				    position: absolute;
+					margin: auto;
+					top: 20vh;
+					left: 0;
+					color: #000;
+
+					h1 {
+
+						margin-bottom: 3px;
+						font-weight: 300;
+
+						span {
+							letter-spacing: 0.5px;
+						}
+
+					}
+
+					p {
+						font-size: 120%;
+						margin-top: 0;
+					}
+				}
+
+				div.mockup {
+					position: relative;
+					float: right;
+
+					img {
+						width: 120%;
+						height: auto;
+						margin-top: -15vh;
+					}
+				}
+			}
+		}
+	}
+
+
+	&#problem {
+
+		height: auto;
+		padding: 5% 0;
+		display: table;
+
+
+		div.container {
+
+			h2 {
+				color: #000;
+				font-weight: 600;
+				margin-bottom: 5rem;
+			}
+
+			div.row {
+				
+				display: table;
+				margin: 0 auto;
+
+				div.columns {
+
+					margin-right: 0;
+					display: table-cell;
+					vertical-align: middle;
+					color: #000;
+
+					iframe {
+						height: 80vh;
+					}
+
+
+					div.box {
+
+						padding: 20px;
+						height: 200px;
+						background: #fbfbfb;
+						color: black;
+						box-shadow: 0 20px 20px rgba(0, 0, 0, 0.06);
+					    border-radius: 10px;
+					    transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+					    margin-top: 40px;
+					    margin-bottom: 80px;
+
+						div.content {
+
+							margin-top: 5%;
+							right: 0;
+							bottom: 0;
+							left: 0;
+
+							h2 {
+								font-weight: 400;
+							}
+
+							h1 {
+								font-weight: 400;
+							}
+
+						}
+
+					}
+
+					div.solution {
+						background: #fff;
+						color: black;
+						box-shadow: 0 20px 20px rgba(0, 0, 0, 0.06);
+					    border-radius: 10px;
+					    transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+					    margin-top: -20px;
+
+					}
+				}
+			}
+		}
+	}
+
+	&#prototype {
+
+		height: auto;
+		padding: 5% 0;
+
+
+		div.container {
+
+			h2 {
+				color: #000;
+				font-weight: 600;
+				margin-bottom: 5rem;
+			}
+
+			div.row {
+				
+				display: table;
+				margin: 0 auto;
+
+				div.columns {
+
+					margin-right: 0;
+					display: table-cell;
+					vertical-align: middle;
+					color: #000;
+
+					iframe {
+						height: 80vh;
+					}
+
+
+					div.box {
+
+						padding: 20px;
+						height: 200px;
+						background: #fbfbfb;
+						color: black;
+						box-shadow: 0 20px 20px rgba(0, 0, 0, 0.06);
+					    border-radius: 10px;
+					    transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+					    margin-top: 20px;
+
+						div.content {
+
+							margin-top: 5%;
+							right: 0;
+							bottom: 0;
+							left: 0;
+
+							h2 {
+								font-weight: 400;
+							}
+
+							h1 {
+								font-weight: 400;
+							}
+
+						}
+
+					}
+
+					div.solution {
+						background: #fff;
+						color: black;
+						box-shadow: 0 20px 20px rgba(0, 0, 0, 0.06);
+					    border-radius: 10px;
+					    transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+					    margin-top: -20px;
+
+					}
+				}
+			}
+		}
+	}
+
+	&#members {
+		height: auto;
+		padding: 5% 0;
+		display: table;
+
+		div.container {
+
+			div.row {
+				
+				display: table;
+				margin: 0 auto;
+
+				h2 {
+					color: #000;
+					font-weight: 600;
+				}
+
+				div.columns {
+
+					margin-right: 0;
+					display: table-cell;
+					vertical-align: middle;
+
+					ul.members {
+						padding: 0;
+					    list-style: none;
+					    display: flex;
+					    justify-content: center;
+					    align-items: center;
+					    margin-bottom: 6rem;
+
+					    li {
+					    	width: 20vw;
+					    	text-align: center;
+
+							img {
+					    		width: 100%;
+							    border-radius: 50%;
+							    transform: scale(0.8);
+							    transition: all 0.2s ease-in-out;
+					    	}
+
+					    	h4 {
+					    		margin-bottom: 0;
+					    		color: #424242;
+					    		font-weight: 400;
+					    	}
+
+					    	p {
+					    		color: #424242;
+					    	}
+
+					    	@media (max-width: 550px)
+					    	{
+								h4 {
+									font-size: 50%;
+								}
+
+								p {
+									font-size: 50%;
+								}
+					    	}
+					    }
+					}
+
+				}
+			}
+		}
+	}
+	
+
+	&#video {
+		height: auto;
+		padding: 5% 0;
+		display: table;
+
+		div.container {
+
+			div.row {
+				
+				display: table;
+				margin: 0 auto;
+
+				div.columns {
+
+					margin-right: 0;
+					display: table-cell;
+					vertical-align: middle;
+
+					video {
+						width: 100%;
+						height: auto;
+					}
+					
+
+				}
+			}
+		}
+	}
+}
+
+footer {
+	font-size: 1.2rem;
+    padding: 2rem 0;
+    line-height: 2rem;
+    background: #4d7dd2;
+    color: #f7f7f7;
+    text-align: center;
+}
+
+#graph{
+	height: 300px; 
+	width: 55%;
+	align-content: center;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+@media (max-width: 550px)
+{
+	div.mockup {
+		display: none;
+	}
+}
