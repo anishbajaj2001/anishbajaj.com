@@ -209,7 +209,12 @@
 			</section>
 
 
+			<section class="grey">
+
+				<div class="btn-container">
+						<button id="toggle">View Projects</button>
 				</div>
+			</section>
 
 			<section id="contact">
 				<div class="container">
@@ -243,6 +248,25 @@
 	    <script type="text/javascript" src="/assets/scripts/app.js"></script>
 	    <script type="text/javascript" src="/assets/scripts/blog.js"></script>
 	    <script type="text/javascript" src="/assets/scripts/date-format.min.js"></script>
+
+	    <script type="text/javascript">
+	    	
+			$(document).ready(function() {
+			  $("#toggle").click(function() {
+			    var elem = $("#toggle").text();
+			    if (elem == "View Projects") {
+			      //Stuff to do when btn is in the read more state
+			      $("#toggle").text("Hide Projects");
+			      $("#work").slideDown();
+			    } else {
+			      //Stuff to do when btn is in the read less state
+			      $("#toggle").text("View Projects");
+			      $("#work").slideUp();
+			    }
+			  });
+			});
+
+	    </script>
 
 	</body>
 

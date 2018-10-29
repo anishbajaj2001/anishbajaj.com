@@ -104,7 +104,7 @@
   -webkit-animation: Animate-JS 4s;
   -moz-animation: Animate-JS 4s;
   -o-animation: Animate-JS 4s;
-  width: 65%;
+  width: 75%;
   height: 35px;
   border-radius: 25px;
   position: absolute;
@@ -114,22 +114,22 @@
   from {
     width: 10px; }
   to {
-    width: 65%; } }
+    width: 75%; } }
 @-webkit-keyframes Animate-JS {
   from {
     width: 10px; }
   to {
-    width: 65%; } }
+    width: 75%; } }
 @-moz-keyframes Animate-JS {
   from {
     width: 10px; }
   to {
-    width: 65%; } }
+    width: 75%; } }
 @-o-keyframes Animate-JS {
   from {
     width: 10px; }
   to {
-    width: 65%; } }
+    width: 75%; } }
 #Skill-C {
   animation: Animate-C 4s;
   -webkit-animation: Animate-C 4s;
