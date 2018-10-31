@@ -621,6 +621,21 @@ section {
     height: auto; }
     section#stuff div.container {
       width: 90% !important; }
+      section#stuff div.container div.twelve div.image-container {
+        text-align: center;
+        margin-bottom: 5vh; }
+        section#stuff div.container div.twelve div.image-container p {
+          margin-bottom: 0 !important; }
+        section#stuff div.container div.twelve div.image-container img.cover {
+          height: 60vh;
+          width: auto;
+          box-shadow: 0 25px 30px 0 rgba(0, 0, 0, 0.21);
+          border-radius: 5px; }
+        section#stuff div.container div.twelve div.image-container img.portfolio {
+          max-height: 75vh;
+          max-width: 100%;
+          box-shadow: 0 25px 30px 0 rgba(0, 0, 0, 0.21);
+          border-radius: 15px; }
       section#stuff div.container div.six.columns img {
         width: 80%;
         height: auto;

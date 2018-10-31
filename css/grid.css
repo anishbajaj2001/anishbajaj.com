@@ -147,6 +147,16 @@ button:focus {
   ;
 }
 
+#blog-links a div.impulse {
+  background: no-repeat url(../img/impulse.png) 80% / 70%,  #d7a7e4 90% / 100%;
+  ;
+}
+
+#blog-links a div.navchetna {
+  background: no-repeat url(../img/navchetna.jpg) 100% / 100%,  #e4e4e4 90% / 100%;
+  ;
+}
+
 
 #blog-links .blog-link .article-image {
   height: 250px;
