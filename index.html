@@ -64,7 +64,7 @@
 						<div class="six columns">
 
 							
-							<p>Hello. I&rsquo;m Anish.</p>
+							<p class="ticker"></p>
 
 							<p>I'm a 17-year-old high school student at The Mother's International School, New Delhi. Vastly captivated by the technology around myself, I like to <span style="font-style: italic">make</span> things. I am the President of my school's technology club, <a href="https://minet.co" style="font-weight:500;">MINET</a>. Currently, I'm working at <a href="http://thegirlcode.co" style="font-weight:500;">The Girl Code</a> organization.</p><br />
 
@@ -77,6 +77,32 @@
 
 					</div>
 
+				</div>
+
+			</section>
+
+			<section id="quote" class="grey">
+
+				<div class="container">
+
+					<div class="row">
+
+						<div class="twelve columns">
+
+							<h1>"Good design is as little design as possible"</h1>
+							<p style="text-align: right;">- Dieter Rams</p>
+
+						</div>
+
+						<div class="twelve columns">
+
+							<p>Minimalist design is something I always try to reflect in my work. I believe design is meant to be unobtrusive, honest, durable, and thorough – conforming to the users' needs with utmost precision.</p>
+
+							<p>
+	
+						</div>
+
+					</div>
 				</div>
 
 			</section>
@@ -252,7 +278,7 @@
 					<div class="row">
 						<div class="twelve columns">
 							<h2 class="subhead">Contact</h2>
-							<p>The best way to reach me is to email me at <a href="mailto:mail@anishbajaj.com">mail@anishbajaj.com</a>. I try to respond within 24 hours of receiving a message. Alternatively, you could connect with me on social media: I maintain a portfolio on my <a href="https://www.instagram.com/theanishbajaj/">Instagram page</a> and a résumé on my <a href="https://linkedin.com/in/anish-bajaj-92a59097">LinkedIn account</a></p>
+							<p>The best way to reach me is to email me at <a href="mailto:mail@anishbajaj.com">mail@anishbajaj.com</a>. I try to respond within 24 hours of receiving a message. Alternatively, you could connect with me on social media: I maintain a portfolio on my <a href="https://www.instagram.com/theanishbajaj/">Instagram page</a> and a résumé on my <a href="https://linkedin.com/in/anish-bajaj-92a59097">LinkedIn account</a>.</p>
 							<ul class="social">
 								<li><a href="http://facebook.com/anishbajaj01"><i class="ion-social-facebook"></i>anishbajaj01</a></li>
 								<li><a href="http://twitter.com/anishbajaj01"><i class="ion-social-twitter"></i>@anishbajaj01</a></li>
@@ -272,13 +298,6 @@
 		</div>
 	
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-		<script src="/assets/bower_components/angular/angular.min.js"></script>
-	    <script src="/assets/bower_components/angular/angular-ui-router.min.js"></script>
-	    <script src="/assets/bower_components/angular/angular-animate.min.js"></script>
-	    <script src="/assets/bower_components/particles.min.js"></script>
-	    <script type="text/javascript" src="/assets/scripts/app.js"></script>
-	    <script type="text/javascript" src="/assets/scripts/blog.js"></script>
-	    <script type="text/javascript" src="/assets/scripts/date-format.min.js"></script>
 
 	    <script type="text/javascript">
 	    	
@@ -295,6 +314,41 @@
 			      $("#work").slideUp();
 			    }
 			  });
+
+			    var sentences = ["Hello. I'm Anish.", "Bonjour. Je m'appelle Anish.", "नमस्ते। मैं अनीश हूं।", "Hola. Me llamo Anish.", "This text will change." ];
+				var counter = 1;
+				var ticker = $("p.ticker");
+				function changeText() {
+				    var el = ticker
+				      , text = sentences[counter]
+				      , oldText = el.text();
+				    var x = setInterval(function() {
+				        if (oldText.length != 0) {
+				            oldText = oldText.slice(0, -1);
+				            el.text(oldText);
+				        } else {
+				            setTimeout(function() {
+				                var y = setInterval(function() {
+				                    if (el.text().length != text.length) {
+				                        el.text(text.slice(0, el.text().length + 1));
+				                    } else {
+				                        setTimeout(function() {
+				                            if (counter >= sentences.length - 1)
+				                                counter = 0;
+				                            else
+				                                counter++;
+				                            changeText();
+				                        }, 3000);
+				                        clearInterval(y);
+				                    }
+				                }, 60);
+				            }, 60);
+				            clearInterval(x);
+				        }
+				    }, 60);
+				}
+				ticker.html(sentences[0]);
+				setTimeout(changeText, 3000);
 			});
 
 	    </script>
