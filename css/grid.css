@@ -135,11 +135,11 @@ button:focus {
 }
 
 #blog-links a div.tgc {
-  background: no-repeat url(../img/tgc.png) 90% / 90%,  #f78295 50% / 100%;
+  background: no-repeat url(../img/tgclowres.png) 90% / 90%,  #f78295 50% / 100%;
 }
 
 #blog-links a div.minet {
-  background: no-repeat url(../img/minet.png) 90% / 90%,  #77a0e6 50% / 100%;
+  background: no-repeat url(../img/minetsite.png) 90% / 90%,  #77a0e6 50% / 100%;
 }
 
 #blog-links a div.ldc {
