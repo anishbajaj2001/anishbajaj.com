@@ -13,9 +13,27 @@ body#home section#work .section {
   margin: 0 auto;
 }
 
+ul.social {
+  list-style: none; 
+  text-align: center; }
+ul.social li {
+  width: 18%;
+  float: left;
+  padding: 3%;
+  margin: 2px 0; }
+ul.social li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 300%;
+  border: none; }
+ul.social li a i {
+  display: inline-block;
+  width: 40px; }
+
 #work{
   display: none;
 }
+
 .btn-container{
   text-align: center;
   height: 10vh;
@@ -29,17 +47,17 @@ button {
     font-size: 24px;
     margin-top: 1rem;
     border: none;
-    border-bottom: 3px solid #ddd;
+    border-bottom: 3px solid #ccc;
     background: none;
     font-family: inherit;
-    color: #6699ee;
-    text-transform: uppercase;
+    color: #ccc;
     font-weight: 600;
     transition: all 0.2s;
 }
 
 button:hover {
-    border-bottom: 3px solid #bbb;
+    color: #aaa;
+    border-bottom: 3px solid #aaa;
 }
 
 

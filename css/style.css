@@ -27,6 +27,62 @@
 */
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+body.berkeley {
+  background: url('../img/wallpaper.png') no-repeat center center fixed;
+  display: block;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  z-index: 5;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  transition: all 1.5s;
+}
+
+.center h3 {
+  margin: 0;
+  font-size: 300%;
+}
+
+.center button {
+  color: #ddd;
+  font-size: 120%;
+}
+
+.center p a {
+  color: #ddd;
+}
+
+
+#contactMe {
+  display: none;
+  position: absolute;
+  width: 100%;
+  transition: visibility 0s, opacity 0.5s linear;
+  text-align: center;
+}
+
+div#inner {
+  display: inline-block;
+  width: 100%;
+}
+
+
+
 .container {
   position: relative;
   width: 100%;
@@ -227,26 +283,7 @@ a:hover {
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  display: inline-block;
-  color: #555;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
-  cursor: pointer;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+
 
 .button:hover,
 input[type="submit"]:hover,
