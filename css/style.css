@@ -547,9 +547,10 @@ there.
 /* Larger than desktop */
 /* Larger than Desktop HD */
 .vercent {
-  height: 100px;
+  height: auto;
   line-height: 100px;
   white-space: nowrap;
+  text-align: center;
 }
 
 
@@ -613,10 +614,13 @@ body#home header#masthead .right.columns {
 
 body#home section#about img {
   display: inline-block;
-  max-width: 60%;
+  max-width: 50%;
   height: auto;
-  float: right; 
-  border-radius: 25px;}
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 25px;
+  box-shadow: #777 0 0 20px;
+}
 
 body#home section#quote {
   padding: 5%;
@@ -655,10 +659,32 @@ body#home section p {
 width: 100%; }
 
 body#home section#about {
-padding-top: 175px;
-padding-bottom: 6rem; }
+padding-top: 250px;
+height: 50vh; }
+
+body#home section#about div.intro {
+  width: 70%;
+  margin: 0 auto;
+}
+
+body#home section#about div.intro div.links a {
+  text-decoration: none;
+  font-size: 1.2em;
+  border: 1px solid #aaa;
+  margin-top: 20px;
+  padding: 15px 25px;
+  border-radius: 7px;
+  width: 120%;
+}
+
+body#home section#about div.intro div.links a:hover {
+  background: #6699ee;
+  color: #fff;
+}
 
 body#home section#about h2{
+  font-weight: 100;
+  font-size: 55px;
 padding-bottom: 50px; }
 body#home section#about p.intro {
   font-style: italic; }
@@ -757,7 +783,6 @@ body#home section#contact ul.social {
   list-style: none; 
   text-align: center; }
 body#home section#contact ul.social li {
-  width: 50%;
   float: left;
   margin: 2px 0; }
 body#home section#contact ul.social li a {
@@ -948,41 +973,78 @@ body#home section#footer {
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-      body#home header#masthead.sticky h3 {
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-        -webkit-transform-origin: 0 0;
-        -ms-transform-origin: 0 0;
-        transform-origin: 0 0;
-        margin-bottom: 0;
-        -webkit-transition: -webkit-transform 0.3s ease;
-        transition: -webkit-transform 0.3s ease;
-        -o-transition: transform 0.3s ease;
-        transition: transform 0.3s ease;
-        transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
-      body#home header#masthead.sticky .eight.columns {
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(0.9);
-        -webkit-transform-origin: 0 0;
-        -ms-transform-origin: 0 0;
-        transform-origin: 0 0;
-        -webkit-transition: -webkit-transform 0.3s ease;
-        transition: -webkit-transform 0.3s ease;
-        -o-transition: transform 0.3s ease;
-        transition: transform 0.3s ease;
-        transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
-  body#home section#about {
-    padding-top: 120px;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 3rem; }
+    body#home header#masthead.sticky h3 {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+      transform-origin: 0 0;
+      margin-bottom: 0;
+      -webkit-transition: -webkit-transform 0.3s ease;
+      transition: -webkit-transform 0.3s ease;
+      -o-transition: transform 0.3s ease;
+      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
+    body#home header#masthead.sticky .eight.columns {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+      -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+      transform-origin: 0 0;
+      -webkit-transition: -webkit-transform 0.3s ease;
+      transition: -webkit-transform 0.3s ease;
+      -o-transition: transform 0.3s ease;
+      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
+      
+      body#home section#about {
+        padding-top: 120px;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 3rem; 
+        height: auto;
+      }
+
+      body#home section#about div.intro {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      body#home section#about div.links div {
+        margin-bottom: 25px;
+      }
+
+
+
     body#home section#about h2 {
-      padding-bottom: 25px;
+      font-size: 38px;
+      padding-bottom: 0px;
     }
+
+    body#home section#about p {
+      text-align: justify;
+      font-size: 100%;
+    }
+
     body#home section#about .vercent {
       height: auto;
       text-align: center;
+    }
+
+    body#home section#about div.intro div.links {
+      display: flex;
+      text-align: center;
+      margin-top: -2.5rem;
+    }
+
+    body#home section#about div.intro div.links a {
+      font-size: 1em;
+      border: 1px solid #aaa;
+      margin-top: 20px;
+      padding: 10px 15px;
+      border-radius: 7px;
+      width: 120%;
     }
 
     body#home section#about img {

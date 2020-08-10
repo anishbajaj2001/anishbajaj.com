@@ -17,9 +17,8 @@ ul.social {
   list-style: none; 
   text-align: center; }
 ul.social li {
-  width: 18%;
+  width: 33.333333333%;
   float: left;
-  padding: 3%;
   margin: 2px 0; }
 ul.social li a {
   text-decoration: none;
