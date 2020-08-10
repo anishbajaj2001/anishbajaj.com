@@ -684,8 +684,8 @@ body#home section#about div.intro div.links a:hover {
 
 body#home section#about h2{
   font-weight: 100;
-  font-size: 55px;
-padding-bottom: 50px; }
+  font-size: 55px; 
+}
 body#home section#about p.intro {
   font-style: italic; }
 body#home section#about img#dp {
