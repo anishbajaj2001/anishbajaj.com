@@ -166,7 +166,7 @@
   -webkit-animation: Animate-Java 4s;
   -moz-animation: Animate-Java 4s;
   -o-animation: Animate-Java 4s;
-  width: 85%;
+  width: 95%;
   height: 35px;
   position: absolute;
   border-radius: 25px;
@@ -176,28 +176,28 @@
   from {
     width: 10px; }
   to {
-    width: 85%; } }
+    width: 95%; } }
 @-webkit-keyframes Animate-Java {
   from {
     width: 10px; }
   to {
-    width: 85%; } }
+    width: 95%; } }
 @-moz-keyframes Animate-Java {
   from {
     width: 10px; }
   to {
-    width: 85%; } }
+    width: 95%; } }
 @-o-keyframes Animate-Java {
   from {
     width: 10px; }
   to {
-    width: 85%; } }
+    width: 95%; } }
 #Skill-Csharp {
   animation: Animate-C 4s;
   -webkit-animation: Animate-Csharp 4s;
   -moz-animation: Animate-Csharp 4s;
   -o-animation: Animate-Csharp 4s;
-  width: 60%;
+  width: 85%;
   height: 35px;
   position: absolute;
   border-radius: 25px;
@@ -207,22 +207,22 @@
   from {
     width: 10px; }
   to {
-    width: 60%; } }
+    width: 85%; } }
 @-webkit-keyframes Animate-Csharp {
   from {
     width: 10px; }
   to {
-    width: 60%; } }
+    width: 85%; } }
 @-moz-keyframes Animate-Csharp {
   from {
     width: 10px; }
   to {
-    width: 60%; } }
+    width: 85%; } }
 @-o-keyframes Animate-Csharp {
   from {
     width: 10px; }
   to {
-    width: 60%; } }
+    width: 85%; } }
 .Skill-Area {
   z-index: 1;
   float: left;

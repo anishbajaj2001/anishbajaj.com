@@ -9,15 +9,24 @@ body#home section#work .section {
   display: grid;
   /* Code for center-alignment */
   text-align: center;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
+}
+
+body#home section#work .section2 {
+  display: none;
+  /* Code for center-alignment */
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  transform: all 0.2s;
 }
 
 ul.social {
   list-style: none; 
   text-align: center; }
 ul.social li {
-  width: 33.333333333%;
+  width: 25%;
   float: left;
   margin: 2px 0; }
 ul.social li a {
@@ -29,34 +38,28 @@ ul.social li a i {
   display: inline-block;
   width: 40px; }
 
-#work{
-  display: none;
-}
-
 .btn-container{
   text-align: center;
   height: 10vh;
-  margin-top: 1vh;
+  margin-top: 2vh;
 }
 
 button {
     cursor: pointer;
+    padding: 0;
     line-height: 30px;
-    padding: 0 0 5px 0;
-    font-size: 24px;
+    font-size: 18px;
     margin-top: 1rem;
     border: none;
-    border-bottom: 3px solid #ccc;
     background: none;
     font-family: inherit;
-    color: #ccc;
-    font-weight: 600;
+    color: #6699ee;
+    font-weight: 400;
     transition: all 0.2s;
 }
 
 button:hover {
-    color: #aaa;
-    border-bottom: 3px solid #aaa;
+    border-bottom: 1px solid #aaa;
 }
 
 
@@ -95,9 +98,9 @@ button:focus {
 #blog-links {
   /* Grid template */
   -ms-grid-columns: 1fr 24px 1fr 24px 1fr;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
-  grid-template-rows: repeat(6, auto);
+  /* grid-template-rows: repeat(6, auto); */
   grid-gap: 8rem 15rem;
   padding: 5rem;
 }
@@ -126,14 +129,19 @@ button:focus {
   transform: translate(0, -20px);
 }
 
-#blog-links a div.aquarelle {
-  background: no-repeat url(../img/aqua.png) 80% / 80%;
-  background-color: #e8e8e8; 
+#blog-links a div.classifai {
+  background: no-repeat url(../img/logo_big.001-1.png) 50% / 50%;
+  background-color: #dbeeff; 
 }
 
-#blog-links a div.solar {
-  background: no-repeat url(../img/solar.png) 100% / 100%;
-  background-color: #bcbcbc; 
+#blog-links a div.gitlet {
+  background: no-repeat url(../img/gitlet.png) 90% / 90%;
+  background-color: #e7e7e7; 
+}
+
+#blog-links a div.movieClassifier {
+  background: no-repeat url(../img/movieClassifier.png) 80% / 80%, #f9f9f9 50% / 100%;
+  ;
 }
 
 #blog-links a div.shutai {
@@ -157,11 +165,6 @@ button:focus {
 
 #blog-links a div.minet {
   background: no-repeat url(../img/minetsite.png) 90% / 90%,  #77a0e6 50% / 100%;
-}
-
-#blog-links a div.ldc {
-  background: no-repeat url(../img/ldc.png) 80% / 80%,  #bbb 50% / 100%;
-  ;
 }
 
 #blog-links a div.impulse {
@@ -194,7 +197,7 @@ button:focus {
 }
 
 #blog-links .blog-link p {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 200;
   line-height: 1.24;
   margin: 2% 0 -10px 5%;
