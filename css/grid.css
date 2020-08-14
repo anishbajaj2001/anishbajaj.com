@@ -5,6 +5,10 @@ body {
   overflow-x: hidden;
 }
 
+#work {
+  scroll-margin-top: 50px;
+}
+
 body#home section#work .section {
   display: grid;
   /* Code for center-alignment */

@@ -6,6 +6,7 @@
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128966377-1"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -14,6 +15,8 @@
 
 		gtag('config', 'UA-128966377-1');
 	</script>
+
+	<script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 	
 	<title>Anish Bajaj</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -38,12 +41,12 @@
 			<div class="row">
 				<div class="six columns">
 
-						
-						<h3>
-							Anish Bajaj
-						</h3>
 
-					</div>
+					<h3>
+						Anish Bajaj
+					</h3>
+
+				</div>
 
 				<div class = "six columns right">
 					Full Stack Software Developer
@@ -54,68 +57,68 @@
 	
 	<div class="wrapper">
 
-			<section id="about" ui-view style="border-bottom: 1px solid #ddd">
-				
-				<div class="intro" id="projects">
-							
-							
-					<div class="row">
+		<section id="about" ui-view style="border-bottom: 1px solid #ddd">
 
-						<div class="seven columns">
-							<div>
+			<div class="intro" id="projects">
+
+
+				<div class="row">
+
+					<div class="seven columns">
+						<div>
 							<h2 class="subhead">Hi, I'm <b> Anish Bajaj </b></h2>
 
 							
 							<!-- <p class="ticker"></p> -->
 
-							<p>I'm an undergraduate student pursuing Computer Science at UC Berkeley. Based out of SF Bay Area, I love making elegant apps that make my life easier. See a few of my creations below</p> <br>
+							<p>I'm an undergraduate student pursuing Computer Science at UC Berkeley. Based out of SF Bay Area, I love making elegant apps to solve problems. See a few of my creations below</p> <br>
 						</div>
-							<div class="row links">
-								<div class="four columns">
-									<a href="temp.html">Resume</a>
-								</div>
-								<div class="four columns">
-									<a href="temp.html">Projects</a>
-								</div>
-								<div class="four columns">
-									<a href="temp.html">Contact</a>
-								</div>
-
+						<div class="row links">
+							<div class="four columns">
+								<a href="temp.html">Resume <i class="fas">&#xf105;</i></a>
+							</div>
+							<div class="four columns">
+								<a href="#work" class="scroll">Projects <i class="fas">&#xf105;</i></a>
+							</div>
+							<div class="four columns">
+								<a href="#contact" class="scroll">Contact <i class="fas">&#xf105;</i></a>
 							</div>
 
-
 						</div>
 
-						<div class="five columns right vercent">
-							<span class="helper"></span>
-							<img src="img/anish.jpg" />
-						</div>
 
+					</div>
+
+					<div class="five columns right vercent">
+						<span class="helper"></span>
+						<img src="img/anish.jpg" />
 					</div>
 
 				</div>
 
-			</section>
+			</div>
 
-			<section id="quote" class="grey">
+		</section>
 
-				<div class="container">
+		<section id="quote" class="grey">
 
-					<div class="row">
+			<div class="container">
 
-						<div class="twelve columns">
+				<div class="row">
 
-							<h1>"Good design is as little design as possible"</h1>
-							<p style="text-align: right;">- Dieter Rams</p>
+					<div class="twelve columns">
 
-						</div>
+						<h1>"Good design is as little design as possible"</h1>
+						<p style="text-align: right;">- Dieter Rams</p>
 
-						<div class="twelve columns">
+					</div>
 
-							<p>Minimalist design is something I always try to reflect in my work. I believe design is meant to be unobtrusive, honest, durable, and thorough – conforming to the users' needs with utmost precision.</p>
+					<div class="twelve columns">
 
-							<p>
-	
+						<p>Minimalist design is something I always try to reflect in my work. I believe design is meant to be unobtrusive, honest, durable, and thorough – conforming to the users' needs with utmost precision.</p>
+
+						<p>
+
 						</div>
 
 					</div>
@@ -126,8 +129,8 @@
 			<section id="skills" ui-view>
 				
 				<div class="container" id="projects">
-							
-							<h2 class="subhead">Languages</h2>
+
+					<h2 class="subhead">Languages</h2>
 					<div class="row">
 
 						<div class="three columns">
@@ -210,7 +213,7 @@
 				</div>
 
 			</section>
-	
+
 			<section id="work" class="grey">
 				<div class="container">
 					<div class="twelve columns">
@@ -219,93 +222,93 @@
 				</div>
 				
 				<div class="section" id="blog-links">
-				    <a class="blog-link type-image-2-1 row1 col1 first" href="temp.html" target="_blank">
-				      <div class="article-image classifai"></div>
-				      <h3>ClassifAI</h3>
-				      <p>iOS App to simplify Waste Segregation using CoreML image recognition</p>
-				      <div class="portfolio-tags">
-				      	<span>App Development, Machine Learning</span>
-				      </div>
-				    </a>
+					<a class="blog-link type-image-2-1 row1 col1 first" href="temp.html" target="_blank">
+						<div class="article-image classifai"></div>
+						<h3>ClassifAI</h3>
+						<p>iOS App to simplify Waste Segregation using CoreML image recognition</p>
+						<div class="portfolio-tags">
+							<span>App Development, Machine Learning</span>
+						</div>
+					</a>
 
-				    <a class="blog-link type-image-2-1 row1 col2" href="atherm.html" id="second" target="_blank">
-				      <div class="article-image a-therm"></div>
-				      <h3>A-Therm</h3>
-				      <p>Automatic Thermostat to reduce electricity consumption</p>
-				      <div class="portfolio-tags">
-				      	<span>Design and Development</span>
-				      </div>
-				    </a>
+					<a class="blog-link type-image-2-1 row1 col2" href="atherm.html" id="second" target="_blank">
+						<div class="article-image a-therm"></div>
+						<h3>A-Therm</h3>
+						<p>Automatic Thermostat to reduce electricity consumption</p>
+						<div class="portfolio-tags">
+							<span>Design and Development</span>
+						</div>
+					</a>
 
-				    <a class="blog-link type-image-2-1 row1 col3" href="temp.html" id="second" target="_blank">
-				      <div class="article-image gitlet"></div>
-				      <h3>Gitlet</h3>
-				      <p>Java-based version control system for local and remote repositories</p>
-				      <div class="portfolio-tags">
-				      	<span>Design and Development</span>
-				      </div>
-				    </a>
+					<a class="blog-link type-image-2-1 row1 col3" href="temp.html" id="second" target="_blank">
+						<div class="article-image gitlet"></div>
+						<h3>Gitlet</h3>
+						<p>Java-based version control system for local and remote repositories</p>
+						<div class="portfolio-tags">
+							<span>Design and Development</span>
+						</div>
+					</a>
 				</div>
 
-			    <div class="btn-container">
+				<div class="btn-container">
 					<button id="toggle">View More</button>
 				</div>
 
 				<div class="section2" id="blog-links">
 
-				    <a class="blog-link type-image-2-1 row1 col1" href="temp.html" id="second" target="_blank">
-				      <div class="article-image movieClassifier"></div>
-				      <h3>Movie Genre Classifier</h3>
-				      <p>ML model to classify a movie into one of 6 genres</p>
-				      <div class="portfolio-tags">
-				      	<span>Machine Learning</span>
-				      </div>
-				    </a>
+					<a class="blog-link type-image-2-1 row1 col1" href="temp.html" id="second" target="_blank">
+						<div class="article-image movieClassifier"></div>
+						<h3>Movie Genre Classifier</h3>
+						<p>ML model to classify a movie into one of 6 genres</p>
+						<div class="portfolio-tags">
+							<span>Machine Learning</span>
+						</div>
+					</a>
 
 					<a class="blog-link type-image-2-1 row1 col1" href="tgc.html" id="third" target="_blank">
-				      <div class="article-image tgc"></div>
-				      <h3>The Girl Code</h3>
-				      <p>Website for non-profit organization</p>
-				      <div class="portfolio-tags">
-				      	<span>Web Design, Initiative</span>
-				      </div>
-				    </a>
+						<div class="article-image tgc"></div>
+						<h3>The Girl Code</h3>
+						<p>Website for non-profit organization</p>
+						<div class="portfolio-tags">
+							<span>Web Design, Initiative</span>
+						</div>
+					</a>
 
-				    <a class="blog-link type-image-2-1 row1 col1" href="minet.html" id="fourth" target="_blank">
-				      <div class="article-image minet"></div>
-				      <h3>MINET</h3>
-				      <p>Technology Club of The Mother's International School</p>
-				      <div class="portfolio-tags">
-				      	<span>Web Design, Leadership</span>
-				      </div>
-				    </a>
+					<a class="blog-link type-image-2-1 row1 col1" href="minet.html" id="fourth" target="_blank">
+						<div class="article-image minet"></div>
+						<h3>MINET</h3>
+						<p>Technology Club of The Mother's International School</p>
+						<div class="portfolio-tags">
+							<span>Web Design, Leadership</span>
+						</div>
+					</a>
 
-				    <a class="blog-link type-image-2-1 row1 col1 first" href="shutai.html" target="_blank">
-				      <div class="article-image shutai"></div>
-				      <h3>Shut.AI</h3>
-				      <p>An app to help you sleep better using music and AI</p>
-				      <div class="portfolio-tags">
-				      	<span>Design and Development</span>
-				      </div>
-				    </a>
+					<a class="blog-link type-image-2-1 row1 col1 first" href="shutai.html" target="_blank">
+						<div class="article-image shutai"></div>
+						<h3>Shut.AI</h3>
+						<p>An app to help you sleep better using music and AI</p>
+						<div class="portfolio-tags">
+							<span>Design and Development</span>
+						</div>
+					</a>
 
-				    <a class="blog-link type-image-2-1 row1 col1 first" href="safai.html" id="first" target="_blank">
-				      <div class="article-image safai"></div>
-				      <h3>Saf.AI</h3>
-				      <p>AI-driven peer-to-peer solution to encourage cleanliness</p>
-				      <div class="portfolio-tags">
-				      	<span>Design and Development</span>
-				      </div>
-				    </a>
+					<a class="blog-link type-image-2-1 row1 col1 first" href="safai.html" id="first" target="_blank">
+						<div class="article-image safai"></div>
+						<h3>Saf.AI</h3>
+						<p>AI-driven peer-to-peer solution to encourage cleanliness</p>
+						<div class="portfolio-tags">
+							<span>Design and Development</span>
+						</div>
+					</a>
 					
 					<a class="blog-link type-image-2-1 row1 col1" href="impulse.html" id="third" target="_blank">
-				      <div class="article-image impulse"></div>
-				      <h3>Enigma</h3>
-				      <p>NodeJS-based Online Physics Hunt</p>
-				      <div class="portfolio-tags">
-				      	<span>Web Development</span>
-				      </div>
-				    </a>
+						<div class="article-image impulse"></div>
+						<h3>Enigma</h3>
+						<p>NodeJS-based Online Physics Hunt</p>
+						<div class="portfolio-tags">
+							<span>Web Development</span>
+						</div>
+					</a>
 				</div>
 			</section>
 
@@ -336,69 +339,100 @@
 				<p>Made with <i class="ion-heart" style="color: #F14E23"></i> by Anish Bajaj.</p>
 			</section>
 		</div>
-	
+
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
-	    <script type="text/javascript">
-	    	
-			$(document).ready(function() {
-			  $("#toggle").click(function() {
-			    var elem = $("#toggle").text();
-			    if (elem == "View More") {
+		<script type="text/javascript">
+
+	    // Vanilla JavaScript Scroll to Anchor
+		// @ https://perishablepress.com/vanilla-javascript-scroll-anchor/
+
+		(function() {
+			scrollTo();
+		})();
+
+		function scrollTo() {
+			const links = document.querySelectorAll('.scroll');
+			links.forEach(each => (each.onclick = scrollAnchors));
+		}
+
+		function scrollAnchors(e, respond = null) {
+			const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+			e.preventDefault();
+			var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
+			const targetAnchor = document.querySelector(targetID);
+			if (!targetAnchor) return;
+			const originalTop = distanceToTop(targetAnchor);
+			window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
+			const checkIfDone = setInterval(function() {
+				const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+				if (distanceToTop(targetAnchor) === 0 || atBottom) {
+					targetAnchor.tabIndex = '-1';
+					targetAnchor.focus();
+					window.history.pushState('', '', targetID);
+					clearInterval(checkIfDone);
+				}
+			}, 100);
+		}
+
+		$(document).ready(function() {
+			$("#toggle").click(function() {
+				var elem = $("#toggle").text();
+				if (elem == "View More") {
 			      //Stuff to do when btn is in the read more state
 			      $("#toggle").text("Hide More");
 			      $(".section2").slideDown({
-					  start: function () {
-					    $(this).css({
-					      display: "grid"
-					    })
-					  }
-					});
-			    } else {
+			      	start: function () {
+			      		$(this).css({
+			      			display: "grid"
+			      		})
+			      	}
+			      });
+			  } else {
 			      //Stuff to do when btn is in the read less state
 			      $("#toggle").text("View More");
 			      $(".section2").slideUp();
-			    }
-			  });
-
-			    var sentences = ["Hello. I'm Anish.", "Bonjour. Je m'appelle Anish.", "नमस्ते। मैं अनीश हूं।", "This text will change." ];
-				var counter = 1;
-				var ticker = $("p.ticker");
-				function changeText() {
-				    var el = ticker
-				      , text = sentences[counter]
-				      , oldText = el.text();
-				    var x = setInterval(function() {
-				        if (oldText.length != 0) {
-				            oldText = oldText.slice(0, -1);
-				            el.text(oldText);
-				        } else {
-				            setTimeout(function() {
-				                var y = setInterval(function() {
-				                    if (el.text().length != text.length) {
-				                        el.text(text.slice(0, el.text().length + 1));
-				                    } else {
-				                        setTimeout(function() {
-				                            if (counter >= sentences.length - 1)
-				                                counter = 0;
-				                            else
-				                                counter++;
-				                            changeText();
-				                        }, 3000);
-				                        clearInterval(y);
-				                    }
-				                }, 60);
-				            }, 60);
-				            clearInterval(x);
-				        }
-				    }, 60);
-				}
-				ticker.html(sentences[0]);
-				setTimeout(changeText, 3000);
+			  }
 			});
 
-	    </script>
+			var sentences = ["Hello. I'm Anish.", "Bonjour. Je m'appelle Anish.", "नमस्ते। मैं अनीश हूं।", "This text will change." ];
+			var counter = 1;
+			var ticker = $("p.ticker");
+			function changeText() {
+				var el = ticker
+				, text = sentences[counter]
+				, oldText = el.text();
+				var x = setInterval(function() {
+					if (oldText.length != 0) {
+						oldText = oldText.slice(0, -1);
+						el.text(oldText);
+					} else {
+						setTimeout(function() {
+							var y = setInterval(function() {
+								if (el.text().length != text.length) {
+									el.text(text.slice(0, el.text().length + 1));
+								} else {
+									setTimeout(function() {
+										if (counter >= sentences.length - 1)
+											counter = 0;
+										else
+											counter++;
+										changeText();
+									}, 3000);
+									clearInterval(y);
+								}
+							}, 60);
+						}, 60);
+						clearInterval(x);
+					}
+				}, 60);
+			}
+			ticker.html(sentences[0]);
+			setTimeout(changeText, 3000);
+		});
 
-	</body>
+	</script>
+
+</body>
 
 </html>
